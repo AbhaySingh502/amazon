@@ -68,6 +68,18 @@ width: 35px !important;
     width: 90.64px;
     height: 60px;
 }
+.header_dropdown{
+    color: #555;
+    width: 53px;
+    height: 38px;
+    background-color: #f3f3f3;
+    background-image: none;
+    border: 1px solid #cdcdcd;
+    border-radius: 4px 0 0 4px;
+    display: flex;
+justify-content: center;
+align-items: center;
+}
 .border:hover{
     border: 1.5px solid white;
 }
