@@ -47,3 +47,10 @@ line-height: 1em;
     font-size: 15px;
     padding: 4px;
 }
+.home_product{
+    display: flex;
+    flex-direction: column;
+}
+.home_row{
+    display: flex;
+}

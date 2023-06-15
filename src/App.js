@@ -3,16 +3,30 @@ import './App.css';
 import Header from './Js/Header';
 import HeaderTwo from './Js/HeaderTwo';
 import Home from './Js/Home';
+import Checkout from './Js/Checkout';
+import {BrowserRouter as Router ,Route,Switch}  from "react-router-dom";
+ 
+// import { Switch } from "@mui/material";
 function App() {
-  return (
+  return (  
+    <Router>
     <div className="App">
+      <Switch>
+        <Route path="/checkout">
+          <Header/>
+          <HeaderTwo/>
+          <Checkout/>
+        </Route>
+        <Route path="/">
+          <Header/>
+          <HeaderTwo/>
+          <Home/>
+        </Route>
+      </Switch>
+    
 
-      <Header/>
-      <HeaderTwo/>
-      <Home/>
-    {/* {Header} */}
-    {/* {Home} */}
     </div>
+    </Router>
   );
 }
 

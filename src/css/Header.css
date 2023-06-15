@@ -43,6 +43,8 @@ width: 35px !important;
     flex-direction: column;
     margin-left: 10px;
     margin-right: 10px;
+    justify-content: center;
+    padding: 2px;
 }
 .header_optionLineOne{
     font-size: 12px;
@@ -96,4 +98,27 @@ justify-content: flex-start;
     font-size: 14px;
     font-weight: 800;
     color: #ffff;
+}
+.lang{
+    display: flex;
+    flex-direction: row;
+    padding:0 9px ;
+    padding-top: 5px;
+    width: 62.38px;
+height: 45px;
+    align-items: center;
+}
+.lang img{
+    width: 24px;
+    height: 18px;
+    margin-right: 2px;
+    margin-top: 2px;
+}
+.lang span{
+    font-size: 18px;
+    line-height: 15px;
+    font-weight: 700;
+}
+.lang .drop{
+    margin: 9px 0 0 -2px;
 }

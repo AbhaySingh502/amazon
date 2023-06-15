@@ -4,12 +4,16 @@ import SearchIcon from '@mui/icons-material/Search';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+// import Checkout from './Checkout';
+import { Link } from 'react-router-dom';
 function Header() {
   return (
     
     <div className='header'> 
-
+      <Link to="/">
       <img className='header_logo border' src= "https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt=''/> 
+      
+      </Link>
       <div className="deliver border">
         <span className='deliver_textOne'>Deliver To</span>
         <span  className='deliver_textTwo'><LocationOnIcon/>India</span>
@@ -22,22 +26,25 @@ function Header() {
         <SearchIcon className='header_searchIcon' />
       </div>
     <div className='header_nav'>
+      <div className='header_option lang border'>
+        <img src='https://static.vecteezy.com/system/resources/thumbnails/002/399/741/small/american-flag-icon-vector.jpg' alt=''/>
+        <span>EN</span>
+        <ArrowDropDownIcon className='drop'/>
+      </div>
         <div className='header_option border'>
-        <span className='header_optionLineOne'>Hello</span>
-            <span className='header_optionLineTwo'>Sign in</span>
+        <span className='header_optionLineOne'>Hello,sign in</span>
+            <span className='header_optionLineTwo'>Accounts & Lists</span>
         </div>
         <div className='header_option border'>
             <span className='header_optionLineOne'>Returns</span>
             <span className='header_optionLineTwo'>& orders</span>
         </div>
-        <div className='header_option border'>
-        <span className='header_optionLineOne'>Your</span>
-            <span className='header_optionLineTwo'>Prime</span>
-        </div>
-        <div className='header_optionbasket border'>
-            <AddShoppingCartIcon/>
-            <span className='header_optionLineOne header_BasketCount'>0</span>
-        </div>
+        <Link to="/checkout">
+            <div className='header_optionbasket border'>
+                <AddShoppingCartIcon/>
+                <span className='header_optionLineOne header_BasketCount'>0</span>
+            </div>
+        </Link>
     </div>
     </div>      
 
